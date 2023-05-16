@@ -1,0 +1,671 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The mind map of Chapter 11-Force</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="76bc330f-f125-4c64-87a2-3e8def8d52fe" class="page serif"><header><img class="page-cover-image" src="The%20mind%20map%20of%20Chapter%2011-Force%2076bc330ff1254c6487a23e8def8d52fe/Action-reaction-Newtons-cradle.webp" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="https://www.notion.so/icons/science_red.svg"/></div><h1 class="page-title">The mind map of Chapter 11-Force</h1></header><div class="page-body"><div><p id="465a2706-ee6d-4daf-8c2e-783bd084ee82" class="block-color-orange_background">Copyright (C) Yang Jiepeng 2022-2023
+All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying, recording or otherwise, without the prior permission of the copyright owner. You can only read the resources from this website. If you found any ILLEGAL USE, please contact jiepengyang@outlook.com. </p></div><ul id="9d6830ac-f243-45ca-bb10-dcfb95961048" class="block-color-teal_background bulleted-list"><li style="list-style-type:disc">Quick Notes of the Science Unit 11- Force</li></ul><div><p id="d12c76f4-bfef-40c7-862f-e1c1317bd875" class="block-color-yellow_background">BACK to HOMEPAGE &lt;Jason Yang’s Internal Website&gt;:</p></div><h1 id="2b025152-dce8-4559-9ba6-71078415011a" class="block-color-blue_background">The mind map of Chapter 11-Force</h1><p id="ec35e5bb-1562-4f10-9bb0-7e97faa7e014" class="block-color-blue_background">A mind map is a graphical representation of information that helps organize and connect ideas. In the context of Chapter 11-Force, a mind map can be a useful tool for understanding the various concepts and relationships between them. Force is an integral part of the study of physics and is defined as any interaction that causes a change in motion. This includes contact forces such as friction and normal force, as well as non-contact forces such as gravity and magnetic  forces. </p><p id="4b2ce4e0-8b78-4b4d-97f1-41d6d38c0bf8" class="">You can click to download the <a href="The%20mind%20map%20of%20Chapter%2011-Force%2076bc330ff1254c6487a23e8def8d52fe.html"><strong>PNG file</strong></a> of the mind map:</p><figure id="05dee7d1-8887-4cb4-95ea-067782c033f2" class="image"><a href="The%20mind%20map%20of%20Chapter%2011-Force%2076bc330ff1254c6487a23e8def8d52fe/Science_Unit_11__Force.png"><img style="width:1104px" src="The%20mind%20map%20of%20Chapter%2011-Force%2076bc330ff1254c6487a23e8def8d52fe/Science_Unit_11__Force.png"/></a></figure><figure id="7bfa2dae-828b-4e90-917d-52f73010497c"><div class="source"><a href="The%20mind%20map%20of%20Chapter%2011-Force%2076bc330ff1254c6487a23e8def8d52fe/Science_Unit_11_Force-2.pdf">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/15a2100c-8e97-4b75-9b3f-bb2423dc0b6d/Science_Unit_11_Force-2.pdf</a></div></figure><figure id="9ceaed7e-7ab9-4331-b8c6-61bd8606b6d4"><div class="source"><a href="The%20mind%20map%20of%20Chapter%2011-Force%2076bc330ff1254c6487a23e8def8d52fe/Science_Unit_11__Force-mindmap.pdf">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/20c88b87-341b-459c-b5c0-335ea0fe64ab/Science_Unit_11__Force-mindmap.pdf</a></div></figure><h1 id="dc8f32c6-6d3b-49ef-882e-785e3ab078a5" class="">Basic ideas of force</h1><blockquote id="5c90d1d3-5639-4cf2-a5ec-eed765bb0f68" class="">A force is a push or a pull on an object We represent forces by drawing arrows</blockquote><p id="055942c2-898d-44d3-b7af-f933d545cccf" class="">The arrow is drawn from where the force acts and it points in the direction of force [Practice]</p><blockquote id="4874ba37-b0ee-461a-ad83-bbd1390b5f96" class="">The longer the arrow, the larger the force</blockquote><h1 id="268e1a28-9805-4d2e-b7b0-f26ee1b284a1" class="">Effect of force</h1><blockquote id="1fb18bc6-8276-4dc3-b733-7023c01f7d41" class="">The forces change the speeds of objects</blockquote><p id="752722bb-1f18-4116-a15f-ae57e4bf2f94" class="">Change moving objects to move faster or slower Change objects at rest to start moving</p><p id="3b724ae8-1248-47bd-8bda-cad4d0fbace1" class="">Change moving objects to stop</p><blockquote id="c6753be5-7503-45a5-bd9b-67cb9561813b" class="">Change the moving direction of object</blockquote><h1 id="df7dcb3d-872a-4cdf-ba21-df112b8c3672" class="">Measuring the force</h1><blockquote id="897706d3-8129-4064-9167-03d965dd74c3" class="">Forces can be measured using a spring balance.</blockquote><p id="da8f8d50-2039-4270-b4fa-f38f520581ed" class="">The unit of force is newton (N).</p><p id="15c6a57c-703b-4094-965c-28f3a0e5bde3" class="">The spring balance can only measure the pulling forces.</p><blockquote id="9c2d3865-9349-44f1-975e-fd671fce2493" class="">We can also use the force sensor and connected to the data logger to measure the forces. The force sensor can measure both pulling forces and the pushing forces</blockquote><p id="7a08e63f-fdfc-44ae-be76-d692102d7912" class="">[Practice] Using spring balance: We need to use zero adjuster to adjust the position of the scale so that the reading is zero (called zero adjustment)</p><p id="f74156b2-0765-44b1-986a-a954bcd8c0e2" class="">[Practice] We draw a graph to show the relationship between the applied force and the (effect of force) e.g., stretched length</p><p id="e27ed8a4-6218-4808-9bc9-3d2b738a95bf" class="">The applied force (N) is always the independent variable.</p><p id="8040fbe5-ca12-4cde-811d-06dfe2cdb3be" class="">The independent variable need to draw on x-axis while the dependent variable need to draw on y-axis.</p><h1 id="a5d1a41c-18e8-4f21-9f15-b09efce5e718" class="">Two types of forces</h1><p id="96bb5ae4-00d0-417f-be34-e4d215b51d6e" class="">Forces can be classified into contact forces and non-contact forces.</p><blockquote id="00ef249e-a237-4dfb-b0ef-6708744b70ab" class="">Contact forces</blockquote><p id="f45e86f9-cc8f-494a-b9a5-b1fbfebe526c" class="">Contact forces act on an objects only when the objects are in contact. E.g., supporting force, friction, air resistance, pulling and pushing forces, action and reaction</p><blockquote id="7195c3cc-2514-4bd3-bd9c-dc63b4dd8aef" class="">Non-contact forces</blockquote><p id="99302e45-0d78-400d-8fb4-ee4413f8759f" class="">Non-contact forces can exist between objects without any contact (act at a distance) or in contact. E.g., Force of gravity</p><h1 id="afd7c3a5-cb8c-49d8-a8da-d0257024c374" class="">Balanced forces and unbalanced forces</h1><blockquote id="faddc4b3-49ed-426a-bfb6-8044362bb1cb" class="">Free-body diagram<p id="d0db4d1c-9e5c-4b19-885d-cf90d777a4f6" class="">[Practice] Use free-body diagram to show all the forces acting on an object.</p></blockquote><p id="252c5cfc-fb60-4547-9355-f2e93b5a991b" class="">Motion of objects under balanced forces and that under unbalanced forces Balanced forces</p><blockquote id="fcb795ec-4d56-4b30-bd22-c5c4e924ad22" class="">Forces acting on the object can be perfectly balanced by other forces of the<p id="2f4441d3-290d-4903-9e24-53d66f10e263" class="">same magnitude in the opposite direction called balanced forces </p><p id="6ae355b7-875e-404f-bab2-977d8220125e" class="">When balanced forces act on a moving object, the object&#x27;s speed and direction of motion will remain the same and in uniform motion</p></blockquote><p id="9fa60453-dc7d-4aab-841e-8b68e82b715d" class="">Unbalanced forces</p><blockquote id="15443f67-a3f1-4f06-9c99-36a5b8a9eb91" class="">Unbalanced forces act on an object, the motion of the object will change Net force<p id="7744d332-274e-4d34-943c-389a3805a954" class="">(Extension)</p></blockquote><p id="e462d97a-518a-4e9c-ac84-556e4d464f00" class="">When several forces are acting on an object, it is useful to calculate the overall effect of these force. The sum of these forces is called the net force</p><p id="0c7ebf53-3131-4fc3-a6f9-8af926ffff85" class="">Balanced force = Zero net force</p><blockquote id="3cbe40a0-cf91-4ae9-98d8-d02b2d74e34c" class="">Unbalanced force = The net force is not zero Newton&#x27;s first law of motion<p id="ce989f39-7017-4053-97eb-042dc2826d75" class="">(Extension)</p></blockquote><p id="92ecce93-de89-4613-9011-54b96e93902c" class="">An object remains at rest or moves at a constant speed towards a constant direction if the net force acting on it is zero</p><h1 id="dc78a18c-863c-4f0e-af8f-6fd90deca475" class="">Action and reaction</h1><blockquote id="f594e77d-d526-4f1b-986e-e5a97d5aa57c" class="">Forces occur in pairs and these pairs of forces are called action-and-reaction pairs.<p id="5ca6f4d9-4899-4edd-abc4-229dda6a01c6" class="">The action and reaction act on different objects and in opposite directions and same magnitude</p><figure id="1949f479-40ed-46e1-ab1e-9a41b65fdcb3" class="image"><a href="The%20mind%20map%20of%20Chapter%2011-Force%2076bc330ff1254c6487a23e8def8d52fe/image53.png"><img style="width:700px" src="The%20mind%20map%20of%20Chapter%2011-Force%2076bc330ff1254c6487a23e8def8d52fe/image53.png"/></a></figure><p id="12cd0b0f-4e8a-439f-a29a-7897d0c6af15" class="">The distance of a object travelled Time (t)</p></blockquote><p id="046b8253-4dfd-4e51-9a15-e360552af3a2" class="">The time of the object travelled</p><p id="3faeab37-ec2c-494d-a24f-c56c1b8adea1" class="">Speed (v)</p><blockquote id="abf03405-3b1a-4eae-adee-96a18a662dc3" class="">Speed describes how fast an object moves.</blockquote><p id="12a914da-8052-4804-8305-cb37d09915a3" class="">The speed of an object is the distance travelled by the object per unit time, <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>d</mi><mi mathvariant="normal">/</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">v=d/t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mord">/</span><span class="mord mathnormal">t</span></span></span></span></span><span>﻿</span></span></p><p id="dfd94362-21ee-4ccb-848d-899c18395a59" class="">The unit of speed:</p><blockquote id="e6859b6e-da8a-4099-8857-ee649fa15d4c" class="">Meter per second (<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><msup><mi>s</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex"> m s^{-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord mathnormal">m</span><span class="mord"><span class="mord mathnormal">s</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span> ) Kilometer per hour ( <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mi>m</mi><msup><mi>h</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">km h^{-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord mathnormal">km</span><span class="mord"><span class="mord mathnormal">h</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span> )</blockquote><p id="9965cd66-5139-4fce-8e10-2c5248a9ff46" class="">The faster an object moves, the higher its speed</p><p id="2848bf81-2154-4757-b1fe-8a9fbf5621b8" class="">The distance travelled by an object during a period of time is necessary for calculate the average speed</p><blockquote id="e5f577ba-c3a0-46a9-bb9e-ab0d969ba2b5" class="">Average speed = distance / time<p id="bf65adc5-7a41-4fa9-b7c8-20387c12a33d" class="">[Practice] Need to write the formula before calculate the average speed Distance-Time Graph</p><p id="9a76deb0-635e-4105-bb59-ed018477c0cb" class="">To represent the motion of an object, draw a distance-time graph for the object</p><p id="79624834-c26a-476e-8d33-8abe62229a22" class="">A distance-time graph shows the distance that an object has travelled at different times.</p></blockquote><p id="85e3292e-c620-4b1a-91ef-76a579179e81" class="">When the object is at rest / coming to rest, the distance-time graph is a horizontal line.</p><p id="389b0b42-0f84-4ff0-beba-fa3554c12b3c" class="">When the object is at a steady speed, the distance-time graph is a straight line with a slope. The higher the speed, the steeper the slope.</p><p id="9538d2a3-7435-4d73-8fae-83971024889b" class="">When the object move in uniform motion, the distance-time graph is a straight line. When the object move in non-uniform motion, the distance-time graph is a curve line.</p><blockquote id="d55694d9-0afd-406a-81e8-bd1c898ea23e" class="">[Practice] Drawing a distance-time graph<p id="0f0f98b3-af3d-4374-b1d8-b2d1edbf88f5" class="">Title E.g., The distance-time graph of the car from time = 0 s to 100 s x-axis name with time (unit), draw with a straight line and arrow</p><p id="0a97a539-c9a1-4567-8ff8-7699b094cd99" class="">y-axis name with distance (unit), draw with a straight line and arrow</p><figure id="d6813c57-10d5-45ae-ba8b-171044561481" class="image"><a href="The%20mind%20map%20of%20Chapter%2011-Force%2076bc330ff1254c6487a23e8def8d52fe/image53.png"><img style="width:700px" src="The%20mind%20map%20of%20Chapter%2011-Force%2076bc330ff1254c6487a23e8def8d52fe/image53.png"/></a></figure><p id="b17d5522-75b6-44ec-98b1-35b545ca3ed6" class="">using straight lines to connect the points and &quot;0&quot; [Practice] Describe the distance-time graph</p><p id="90286a2e-9bda-4846-98ae-adf696c6f7f1" class="">From time =   to   , the (object) travelled in a uniform motion / non- uniform motion, the object move in a steady speed / stay at rest / coming to rest, the object move   m, the object move in a slower speed / faster speed.</p><p id="59da7307-23db-4784-b8cc-cdd50bda3f35" class="">Uniform motion and non-uniform motion</p><p id="0bef44bc-1707-4103-bbb1-3474e9eeb8ef" class="">When an object move at a constant speed and a fixed direction, the object said to be in uniform motion. E.g., The people standing still on an escalator, the dish of sushi on a straight conveyor belt.</p><p id="02decc36-1042-4ceb-9fdb-2da396802572" class="">When an object move at a changing speed or changing direction, the object is said to be in non-uniform motion. E.g., when the car is braking, child playing on a swing with direction and speed changing.</p></blockquote><h1 id="4f0a58e3-1892-48aa-a4c2-6d798d8f3051" class="">Force of gravity</h1><blockquote id="c1b7daa3-db60-4443-b36a-57be3b3ec4c4" class="">Newton discovered that any two objects attract each other with a force called the force of gravity.</blockquote><p id="09463ffe-18c9-4052-9081-40fce80f1060" class="">The force of gravity is an non-contact force.</p><p id="affadbb1-5042-4126-b50e-b6daec16babc" class="">The force of gravity exerted by the Earth on an object pulls the object towards the Earth&#x27;s centre.</p><blockquote id="11701d4b-f91a-4b4b-9f52-4acdad0806ab" class="">The magnitude of the force of gravity acting on an object depends on the object&#x27;s mass.</blockquote><p id="68e54c8b-56a6-463f-a1c2-ad1bb25ffc82" class="">The greater the mass of the object, the larger the force of gravity.</p><blockquote id="72d27dff-a70b-4c4b-8651-ad97f940b6c6" class="">Weight and mass</blockquote><p id="22420f19-e383-4e7d-9d44-90d59c9576d3" class="">The mass of an object measures the amount of matter contains.</p><blockquote id="844cea68-f04e-4ce8-9e3b-e04c1834d0a3" class="">The unit of mass is kilogram (kg) or gram (g)</blockquote><p id="14b5e7b5-992d-4ec2-9be6-2cbde59bcd30" class="">The weight of an object on Earth is the force of gravity of the Earth acting on the object.</p><p id="742d5f29-1f93-4310-ac4d-c91192975fa6" class="">Weight can be measured by using a spring balance and its unit is newton. The larger the force of gravity acting on an object, the greater its weight.</p><p id="5dbef490-2589-444e-acb8-d435ad98d89c" class="">The mass of an object is the same in different places because the amount of the matter contained in the object is always the same.</p><p id="8be6de9a-5c36-4184-bab2-d1d8a585be79" class="">The weight of an object may change from place to place.</p><figure id="cfb7688c-09b7-4611-9234-68d1c3b55504" class="image"><a href="The%20mind%20map%20of%20Chapter%2011-Force%2076bc330ff1254c6487a23e8def8d52fe/image53.png"><img style="width:700px" src="The%20mind%20map%20of%20Chapter%2011-Force%2076bc330ff1254c6487a23e8def8d52fe/image53.png"/></a></figure><p id="cd217376-3a49-4b78-be54-0686e0f6ce41" class="">The mass and the air resistance have a direct proportion.</p><p id="e3c8a79a-f9cf-49f3-a371-6238f3bd3b31" class="">The ratio of weight to mass is a constant for any object. The ratio is equal to 9.8 N kg^(-1) on Earth. The weight on Moon is about one-sixth of the weight on the Earth 1.63 N kg^(-1) .</p><h1 id="4892dd5b-4b94-444c-a901-70a08dca1269" class="">Friction and air resistance</h1><blockquote id="6daf0e7e-7b4c-4592-b597-254f604a489c" class="">Friction (contact force)</blockquote><p id="1c646065-64f9-4637-ae0d-08432920fa42" class="">When an object slides or tends to slide over a surface, friction acts on the object and opposes the object&#x27;s sliding motion</p><blockquote id="fc8c94c3-c3fa-4966-a316-090519b082e6" class="">Friction opposes the sliding motion of an object over a surface it is in contact with.</blockquote><p id="774a8155-5e47-4eef-838d-cf89b7826185" class="">E.g., finger slides over a smartphone&#x27;s screen</p><p id="0e6b86e3-5e3c-4e06-b62b-9b9bca327b65" class="">When apply a force on an object and the object does not move, friction still exists and we call it static friction</p><p id="2d0b6946-8a47-4131-af36-09682520fd45" class="">As the object does not move, the net force on the object is zero.</p><p id="fdefbbaa-523e-4a43-bae4-d944356120d6" class="">The friction will be equal to the force you apply but in opposite direction.</p><p id="7cb44458-d153-41a5-883f-9a3adb9f014b" class="">When apply a larger force on an object and the object start move, it will have a constant friction and we call it sliding friction.</p><p id="63da285b-ac9c-4495-bcec-0092290ae6a0" class="">The factors that will affect the sliding friction are the roughness of the contact surface and the mass of the object.</p><blockquote id="76444180-69e0-4eeb-9805-3bd910efebb9" class="">Air resistance (contact force)</blockquote><p id="d98f9382-a459-4796-93bc-db131077b745" class="">When an object moves in air, an opposing force is called air resistance.</p><blockquote id="f0352874-a349-4ac2-bfe2-2664df20ca0d" class="">Air resistance opposes the motion of an object moving in air.<p id="fd039c82-280e-4466-b022-e926c28499e4" class="">E.g., Air resistance acts on the bicycle rider and opposes his motion Reducing friction and air resistance</p></blockquote><p id="e5fd8eba-03e1-4b6e-ba7a-7fd6877225a7" class="">Using lubricants</p><blockquote id="b2bfe6dc-f5dc-4ac5-8646-75d2a6c7c5c4" class="">The friction between two surfaces can be reduced by applying lubricants. E.g., Soapy water, lubricating oil, Vaseline<p id="ac4603c8-b2ca-45f1-a96e-e852580e588f" class="">Lubricants can form a layer of lubricating film on the surface of the object, so that the contact area between the surface of the object is reduced, thus reducing the friction between the objects. （润滑油能够在物体表面形成一</p><p id="70bf8040-30d0-4918-b352-56e99f7840dc" class="">层润滑膜，使物体表面之间的接触面积减小，从而减少了物体之间的摩擦力）</p></blockquote><p id="d4a88469-2853-4ddd-9dd2-9e66249b45dc" class="">Separating surfaces using an air cushion</p><blockquote id="bdc75042-4599-4d2a-8205-2869229f900c" class=""><p id="0417be3f-71c7-4015-ab85-dddc538544aa" class="">E.g., Maglev trains and jetfoils</p><p id="43bc57b5-76d1-448e-a6ab-3721d9c81037" class="">Air cushion reduces the area of contact between the object and the ground, thus reducing the friction force. In addition, the gas in the air cushion can flow, which reduces the air resistance to moving objects across the ground.</p><p id="631bebfb-6562-4795-bf65-5b125fe1e85c" class="">（气垫可以减少物体与地面之间的接触面积，从而降低摩擦力。另外，气垫中的气体也可以流动，从而使物体在地面上移动时遇到的阻力减小。）</p></blockquote><p id="24debaaa-5505-43a7-aa4f-a5be0c8a1f89" class="">Using rolling objects</p><blockquote id="5215d4bc-32d3-4f3f-b66f-46171d6b6726" class="">Friction can also be reduced with the use of rolling objects. E.g., rollers, ball bearing<p id="70893751-eae5-44d2-923f-a326675c4fcb" class="">The contact area of a rolling object is very small. The friction of the object and direction of the rolling object are opposite, so the friction force does</p><p id="76540e3a-ebfe-4ca0-87b4-5e766e78abbc" class="">not produce much resistance to the motion of the rolling object.（滚动物体的接触面积很小。而且物体的摩擦力和滚动物体移动方向相反，所以摩擦力不会对滚动物体的运动产生太大的阻力。）</p></blockquote><p id="88e35037-4407-4fac-b612-f8247cc41f3d" class="">Streamlining the shapes of objects</p><blockquote id="ce8ccbd8-4976-422b-bd1d-180f711f0162" class="">The shape of an object affects the air resistance acting on it.<p id="feae9e5b-0c68-44f4-83da-163b5e7062a6" class="">The air resistance is reduced if the object has a streamlined shape. E.g., high-speed vehicles, airplane, trains</p><p id="72bb32b2-92a9-45e3-bcb6-44d902764752" class="">The shape of a streamlined object allows air to flow more smoothly over its surface, reducing the air resistance. （流线型物体的外形设计使得空气在其表面上流动时能够更加顺畅，减少了空气的阻力。）</p></blockquote><p id="d4bb0941-f36d-412e-a061-79182b44add2" class="">The utility of reducing friction (extension)</p><blockquote id="91d787a2-1882-4f0d-a109-94d0cde24e50" class="">Reduce energy loss; Increase the speed and efficiency of motion and reduce friction; It can reduce the wear and damage of mechanical equipment （减少能量损失；增加运动速度和效率减少摩擦力；可以减少机械设备的磨损和损坏）<p id="4ed44ca8-f911-4711-bc55-9d861f3830b5" class="">Application of using friction and air resistance</p></blockquote><p id="33d61a9c-d57c-49d4-9156-8c0e0d77e200" class="">Holding objects in position: rock climbing, hold the food using chopsticks Preventing slipping: anti-slip strips</p><p id="ca5d840a-eb42-4b3f-a112-6930e3954d8f" class="">Slowing down moving objects: parachute, brake Walking: friction between shoes and ground</p><p id="1dfcafc9-f9b1-404f-9671-3041bca0e6c5" class="">
+</p><hr id="c0e9502e-e9bf-4fc8-ba77-68677ff07514"/></div></article></body></html>
